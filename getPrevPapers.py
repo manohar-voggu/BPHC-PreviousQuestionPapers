@@ -9,7 +9,7 @@ response = os.system("ping 172.16.100.176 -c 1 -W 1 >/dev/null")
 if(response == 0):
 	baseUrl = "http://172.16.100.176:8080"
 else:
-	baseUrl = "http://14.98.244.199:8080"
+	baseUrl = "http://125.22.54.221:8080/"
 codes = courseCode.split()
 html_doc = urllib.request.urlopen(f"{baseUrl}/jspui/browse?type=author&value="+codes[0]+"+"+codes[1])
 soup = BeautifulSoup(html_doc, 'html.parser')
